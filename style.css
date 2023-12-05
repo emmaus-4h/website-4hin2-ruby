@@ -43,6 +43,7 @@ div.albumlist {
 ol.albumlist {
   list-style-type: upper-roman;
   list-style-position:inside;
+  font-size: 16px;
 }
 
 ul li {
@@ -95,7 +96,7 @@ img {
 }
 .right {
   float:right;
-  width:200px;
+  width:300px;
   border: 6px solid #1b1725;
   border-radius: 10px;
   margin-right: 20px;
