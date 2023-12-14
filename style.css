@@ -36,6 +36,12 @@ div {                             /* geldt voor div */
   width: 700px;                   /* vaste breedte van 700 pixels */
   margin: 10px auto;              /* boven en onder 10 pixels marge, links en rechts marge gelijk verdeeld (gecentreerd) */
 }
+
+.subtitle {
+  text-align: center;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
 div.albumlist {
   border-radius: 10px;
   background-color:#efdff4;
@@ -45,6 +51,31 @@ ol.albumlist {
   list-style-position:inside;
   font-size: 16px;
 }
+
+.sectionhead {
+  background-color: #aea5b1;
+  column-span:all;
+}
+
+td, th, tr {
+  border: 2px solid #1b1725;
+  padding: 10px;
+}
+
+table {
+  background-color: #efdff4;
+  text-align: center;
+  justify-self: center;
+  color:#1b1725;
+  border-color: #1b1725;
+  margin-right: 10px;
+  border-radius: 10px;
+  border: 2px solid #1b1725;
+  border-collapse: collapse;
+  padding: 10px;
+}
+
+
 
 ul li {
   list-style-type: none;
