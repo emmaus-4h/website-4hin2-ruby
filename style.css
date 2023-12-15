@@ -33,7 +33,7 @@ div {                             /* geldt voor div */
 /* Indeling voor alle pagina's */
 
 .page {
-  width: 700px;                   /* vaste breedte van 700 pixels */
+  width: 900px;                   /* vaste breedte van 700 pixels */
   margin: 10px auto;              /* boven en onder 10 pixels marge, links en rechts marge gelijk verdeeld (gecentreerd) */
 }
 
@@ -47,9 +47,18 @@ div.albumlist {
   background-color:#efdff4;
 }
 ol.albumlist {
+  display: none;
   list-style-type: upper-roman;
   list-style-position:inside;
   font-size: 16px;
+}
+
+.albumlist table {
+  margin-left:10px
+}
+
+.albumlist h2 {
+  display: none;
 }
 
 .sectionhead {
@@ -73,9 +82,19 @@ table {
   border: 2px solid #1b1725;
   border-collapse: collapse;
   padding: 10px;
+  width:570px;
+  height:300px;
 }
 
+.peekaboo {
+  display:none;
+}
 
+.revealer:hover + .peekaboo {
+  display:block;
+  width: 100px;
+  transition: all 10s ease;
+}
 
 ul li {
   list-style-type: none;
@@ -130,11 +149,11 @@ img {
   width:300px;
   border: 6px solid #1b1725;
   border-radius: 10px;
-  margin-right: 20px;
+  margin-right: 10px;
   margin-left: 5px;/* zorgt dat plaatje niet tegen tekst komt */
 }
 .item-tekst {
-  float:right;
+  float:left;
   width: 450px;
 }
 
