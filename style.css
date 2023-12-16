@@ -32,8 +32,7 @@ div {                             /* geldt voor div */
 
 /* Indeling voor alle pagina's */
 
-.page {
-  width: 900px;                   /* vaste breedte van 700 pixels */
+                 /* vaste breedte van 700 pixels */
   margin: 10px auto;              /* boven en onder 10 pixels marge, links en rechts marge gelijk verdeeld (gecentreerd) */
 }
 
@@ -71,6 +70,30 @@ td, th, tr {
   padding: 5px;
 }
 
+.albumlist table {
+  width:570px;
+}
+
+.present table, .present tr, .present td {
+  background-color:#efdff4;
+  padding:15px;
+  color:#1b1725;
+  border-radius: 5px;
+  right: 10%;
+  border: 2px solid #1b1725;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  margin-left:5%;
+  margin-top:0.1%;
+  margin-bottom:0.1%;
+  border-collapse:collapse;
+  width:100px;
+  height:50px;
+}
+
+.present td:hover {
+  background-color:#aea5b1;
+}
+
 table {
   background-color: #efdff4;
   text-align: center;
@@ -82,8 +105,16 @@ table {
   border: 2px solid #1b1725;
   border-collapse: collapse;
   padding: 10px;
-  width:570px;
+  width:900px;
   height:300px;
+}
+
+
+
+.present {
+  position:fixed;
+  right:2.5%;
+  top:20%;
 }
 
 .peekaboo {
@@ -92,16 +123,19 @@ table {
 
 .revealer:hover + .peekaboo {
   display:block;
-  width: 100px;
+  width: 500px;
+  position:fixed;
+  right:27%;
+  top:30%;
+  border: 6px solid #1b1725;
+  border-radius: 10px;
   transition: all 10s ease;
 }
 
 ul li {
   list-style-type: none;
 }
-div {
-  box-shadow: 10px 10px 5px  lightblue, 10px 20px 5px lightseagreen;
-}
+
 
 header, footer {                  /* geldt voor header en footer */
   margin: 10px 0px;
@@ -185,8 +219,8 @@ h1, h2, h3 {
 }
 
 a {
-    color: #0a017e;
     text-decoration: none;
+    color:#1b1725;
 }
 
 a:hover {
@@ -195,6 +229,10 @@ a:hover {
 /* Opmaak voor sub pagina's */
 
 /* Navigatiebalk voor alle pagina's */
+nav {
+
+}
+
 nav li a.active {
     background-color: #ffe460;
 }
