@@ -26,6 +26,11 @@ html, body {                      /* geldt voor html en body */
   color: #1b1725;               /* tekstkleur donkergrijs */
 }  
 
+.subtitle {
+  text-align: center;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: bold; 
+
 div {                             /* geldt voor div */
   overflow: hidden;               /* zorgt dat DIV de hoogte krijgt van wat erin zit (anders tellen de floats erin niet mee voor de hoogte en wordt dus wel eens hoogte 0) */
 }
@@ -36,9 +41,7 @@ div {                             /* geldt voor div */
   margin: 10px auto;              /* boven en onder 10 pixels marge, links en rechts marge gelijk verdeeld (gecentreerd) */
 }
 
-.subtitle {
-  text-align: center;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+/* Add this line to specify bold font weight */
 }
 
 div.albumlist {
@@ -60,6 +63,11 @@ ol.albumlist {
   display: none;
 }
 
+.tablehead {
+  background-color: #918a93;
+  column-span:all;
+}
+  
 .sectionhead {
   background-color: #aea5b1;
   column-span:all;
@@ -74,19 +82,23 @@ td, th, tr {
   width:570px;
 }
 
+div.present {
+  width:5%;
+}
+
 .present table, .present tr, .present td {
   background-color:#efdff4;
   padding:15px;
   color:#1b1725;
   border-radius: 5px;
-  right: 10%;
+  right: 2.5%;
+  top:50%;
   border: 2px solid #1b1725;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-  margin-left:5%;
-  margin-top:0.1%;
-  margin-bottom:0.1%;
   border-collapse:collapse;
-  width:100px;
+  margin-left:0%;
+  margin-top:12.5%;
+  width:2.5%;
   height:50px;
 }
 
@@ -100,12 +112,13 @@ table {
   justify-self: center;
   color:#1b1725;
   border-color: #1b1725;
-  margin-right: 10px;
+  margin-right: 5%;
+  margin-left: 15%;
   border-radius: 10px;
   border: 2px solid #1b1725;
   border-collapse: collapse;
   padding: 10px;
-  width:900px;
+  width: 80%;
   height:300px;
 }
 
@@ -113,8 +126,6 @@ table {
 
 .present {
   position:fixed;
-  right:2.5%;
-  top:20%;
 }
 
 .peekaboo {
@@ -123,9 +134,8 @@ table {
 
 .revealer:hover + .peekaboo {
   display:block;
-  width: 500px;
+  width: 100%;
   position:fixed;
-  right:27%;
   top:30%;
   border: 6px solid #1b1725;
   border-radius: 10px;
@@ -162,7 +172,7 @@ p {
 }
 
 p a {
-  color: #efdff4;
+  color: #bac0f2;
 }
 
 img {
@@ -188,7 +198,7 @@ img {
 }
 .item-tekst {
   float:left;
-  width: 450px;
+  width: 90%;
 }
 
 span {
@@ -198,8 +208,8 @@ span {
 }
 
 .smallertext {
-  font-size: 0.2em;
   vertical-align: super;
+  font-size:0.5em;
 }
 /* Indeling voor sub pagina */
 
