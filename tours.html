@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="style.css" />
   <title>Dit is een eenvoudige website</title>
   <meta charset="UTF-8" />
+  <script src=script.js></script>
 </head>
 
 <body>
@@ -36,19 +37,33 @@
         <li><a class=active href="tours.html">Tours</a></li>
       </ul>
     </nav>
+    
     <div class=present>
+      <button id=hider type=button onclick=hideCancelled()>Hide Canceled Shows</button>
+     <button id=finder style="display: none;" type=button onclick=showCancelled()>Show Canceled Shows</button>
       <table>
         <tr><td><a href=#pbt>plum blossom tour</a></td></tr>
 
         <tr><td><a href="#masq">the masquerade tour</a></td></tr>
       <tr><td><a href="#cave">Cavetown tour</a>
         </td></tr>
+        <tr><td><a href=#rising>rising world tour</a></td></tr>
+        <tr><td><a href="#bitter">Bittersweet Daze</a></td></tr>
+        <tr><td><a href="plumr">plum blossom (revisited) tour</a></td></tr>
         <tr><td><a href=#top>Back to Top</a></td></tr>
       </table>
     </div>
     <main>
       <div>
-      <p class="tekst">mxmtoon has gone on tour four times since her debut EP <a href=plumblossom.html>plum blossom</a> and accompanying <a href=#pbt>plum blossom tour</a> in 2019. She performed <a href=#masq>the masquerade tour</a> that same year with the release of her debut studio album <a href=themasquerade.html>the masquerade</a>, and closed off the year as the feature artist on <a href=#cave>Cavetown's tour</a>. Maia planned to go on tour again in 2020, but canceled the tour that was supposed to accompany compilation album <a href=albums.html#dawndusk>dawn & dusk</a>. In 2022, mxmtoon performed <a>the rising tour</a> accompanying the release of <a href="therising.html">the rising</a>. Most recently, in 2023 mxmtoon performed in the collaboration tour <a>Bittersweet Daze</a> along with Cavetown, Ricky Montgomery, and rotating guest artists.</p>        </div>
+      <p class="tekst">mxmtoon has embarked on a remarkable journey, with her touring endeavors beginning after the debut of her EP "<a href=plumblossom.html>plum blossom"</a> in 2019. The <a href=#pbt>plum blossom tour</a> marked the commencement of this musical exploration. In the same year, mxmtoon enchanted audiences with <a href=#masq>the masquerade tour</a>, coinciding with the release of her debut studio album, "<a href=themasquerade.html>the masquerade</a>." She rounded off the year as the featured artist on <a href=#cave>Cavetown's tour</a>. Only performances where mxmtoon performed are listed.
+
+        <p>In 2020, plans for another tour accompanying the compilation album "<a href=albums.html#dawndusk>dawn & dusk</a>" were set, but unfortunately, it had to be canceled due to the pandemic.
+
+        <p>The year 2022 witnessed mxmtoon's return to the stage with <a href=#rising>the rising tour</a>, a captivating musical experience tied to the release of "<a href=therising.html>the rising</a>" However, it's important to note that the last ten performances of this tour were canceled due to mxmtoon's prioritization of her mental health. mxmtoon released this announcement:<br>
+
+          <img title="hi everyone, after a lot of thinking and tough conversations i've decided to cancel some of the shows on the european leg of rising (the tour). i want to play these shows more than anything, but the bottom line is i need to prioritize my mental and physical health which frankly are wavering due to exhaustion. australia, new zealand, and paris will play as scheduled and london is rescheduling to 17th of october. the rest of the scheduled shows will be canceled and refunds issued automatically. refunds for the originally scheduled london show are available if you are not able to attend the new date. if you have any questions regarding your ticket please contact your point of purchase. i hope you all can understan, and also know that your well-being is always worth protecting too. lots of love. xo, maia" alt="hi everyone, after a lot of thinking and tough conversations i've decided to cancel some of the shows on the european leg of rising (the tour). i want to play these shows more than anything, but the bottom line is i need to prioritize my mental and physical health which frankly are wavering due to exhaustion. australia, new zealand, and paris will play as scheduled and london is rescheduling to 17th of october. the rest of the scheduled shows will be canceled and refunds issued automatically. refunds for the originally scheduled london show are available if you are not able to attend the new date. if you have any questions regarding your ticket please contact your point of purchase. i hope you all can understan, and also know that your well-being is always worth protecting too. lots of love. xo, maia" class=intext src=afbeeldingen/cancelation.jpeg>
+
+        <p>Undeterred, in 2023, mxmtoon embarked on the <a href=#bitter>Bittersweet Daze Tour</a>, a collaborative effort alongside Cavetown, Ricky Montgomery, and grentperez. The tour continued in Europe with other featured artists. Wrapping up the year on a poignant note, mxmtoon treated fans to the <a href=#plumr>plum blossom (revisited) Tour</a>, aligning with the release of her latest album, "<a href="plumblossomr.html">plum blossom (revisited)</a>." This journey not only reflects mxmtoon's artistic evolution but also underscores the significance of maintaining mental well-being in the face of the demands of the music industry.</a> </p>        </div>
       <div>
         <table>
           <tr class=tablehead>
@@ -58,136 +73,164 @@
             <th>Tour Name</th>
             <th>No.</th>
             <th>Date</th>
+            <th>Venue</th>
             <th>Location</th>
+            
             <th>Performing Artists</th>
             <th>Admission Fee</th>
-            <th>Tickets Sold</th>
           </tr>
           <tr>
             <th id=pbt class=sectionhead rowspan="5">plum blossom tour</th>
             <th>I.</th>
             <td>March 6, 2019</td>
-            <td>Schubas Tavern, Chicago, IL</td>
+             <td>Schubas Tavern</td>
+            <td>Chicago, IL</td>
+           
             <td rowspan="5">mxmtoon, Khai Dreams</td>
             <td rowspan="5">Not Available</td>
-            <td rowspan="5">Sold Out</td>
           </tr>
           <tr>
             <th>II.</th>
             <td>March 9, 2019</td>
-            <td>baby's all right, Brooklyn, NY</td>
+            <td>Baby's All Right</td>
+            <td>Brooklyn, NY</td>
+            
           </tr>
           <tr>
             <th>III.</th>
             <td>March 13, 2019</td>
-            <td>The Crocodile (Back Room), Seattle, WA</td>
+            <td>The Crocodile (Back Room)</td>
+            <td>Seattle, WA</td>
+            
           </tr>
           <tr>
             <th>IV.</th>
             <td>March 14, 2019</td>
-            <td>Rickshaw Stop, San Francisco, CA</td>
+            <td>Rickshaw Stop</td>
+            <td>San Francisco, CA</td>
+            
           </tr>
           <tr>
             <th>V.</th>
             <td>March 16, 2019</td>
-            <td>The Echo, Los Angeles, CA</td>
+            <td>The Echo</td>
+            <td>Los Angeles, CA</td>
+            
           </tr>
           <tr>
           <td class=tablehead colspan="7"></td>
           </tr>
-            
+          
+         <tr>   
           <th id=masq rowspan="18" class=sectionhead>the masquerade tour</th>
             <th>I.</th>
             <td>September 19, 2019</td>
-            <td>Holocene, Portland, OR</td>
+            <td>Holocene</td>
+            <td>Portland, OR</td>
             <td rowspan="18">mxmtoon</td>
             <td rowspan="18">$17.50 + service fees</td>
-            <td rowspan="18">Sold Out</td>
           </tr>
           <tr>
             <th>II.</th>
             <td>September 20, 2019</td>
-            <td>Rio, Vancouver, BC</td>
+            <td>Rio</td>
+            <td>Vancouver, BC</td>
           </tr>
           <tr>
             <th>III.</th>
             <td>September 21, 2019</td>
-            <td>The Crocodile, Seattle, WA</td>
+            <td>The Crocodile</td>
+            <td>Seattle, WA</td>
           </tr>
           <tr>
             <th>IV.</th>
             <td>September 27, 2019</td>
-            <td>Roxy, Los Angeles, CA</td>
+            <td>Roxy</td>
+            <td>Los Angeles, CA</td>
           </tr>
           <tr>
             <th>V.</th>
             <td>October 1, 2019</td>
-            <td>Valley Bar, Phoenix, AZ</td>
+            <td>Valley Bar</td>
+            <td>Phoenix, AZ</td>
           </tr>
           <tr>
             <th>VI.</th>
             <td>October 2, 2019</td>
-            <td>Voodoo Room @ HOB, San Diego, CA</td>
+            <td>Voodoo Room @ HOB</td>
+            <td>San Diego, CA</td>
           </tr>
           <tr>
             <th>VII.</th>
             <td>October 4, 2019</td>
-            <td>Constellation Room, Santa Ana, CA</td>
+            <td>Constellation Room</td>
+            <td>Santa Ana, CA</td>
           </tr>
           <tr>
             <th>VIII.</th>
             <td>October 22, 2019</td>
-            <td>Kilby Court, Salt Lake City, UT</td>
+            <td>Kilby Court</td>
+            <td>Salt Lake City, UT</td>
           </tr>
           <tr>
             <th>IX.</th>
             <td>October 23, 2019</td>
-            <td>Larlmer Lounge, Denver, CO</td>
+            <td>Larlmer Lounge</td>
+            <td>Denver, CO</td>
           </tr>
           <tr>
             <th>X.</th>
             <td>October 25, 2019</td>
-            <td>Amsterdam Hall, St. Paul, MN</td>
+            <td>Amsterdam Hall</td>
+            <td>St. Paul, MN</td>
           </tr>
           <tr>
             <th>XI.</th>
             <td>October 26, 2019</td>
-            <td>Lincoln Hall, Chicago, IL</td>
+            <td>Lincoln Hall</td>
+            <td>Chicago, IL</td>
           </tr>
           <tr>
             <th>XII.</th>
             <td>October 27, 2019</td>
-            <td>Shelter, Detroit, MI</td>
+            <td>Shelter</td>
+            <td>Detroit, MI</td>
           </tr>
           <tr>
             <th>XIII.</th>
             <td>October 31, 2019</td>
-            <td>Great American Music Hall, San Francisco, CA</td>
+            <td>Great American Music Hall</td>
+            <td>San Francisco, CA</td>
           </tr>
           <tr>
             <th>XIV.</th>
             <td>November 6, 2019</td>
-            <td>Velvet Underground, Toronto, ON</td>
+            <td>Velvet Underground</td>
+            <td>Toronto, ON</td>
           </tr>
           <tr>
             <th>XV.</th>
             <td>November 8, 2019</td>
-            <td>The Sinclair, Boston, MA</td>
+            <td>The Sinclair</td>
+            <td>Boston, MA</td>
           </tr>
           <tr>
             <th>XVI.</th>
             <td>November 9, 2019</td>
-            <td>The Foundry, Philidalphia, PA</td>
+            <td>The Foundry</td>
+            <td>Philidalphia, PA</td>
           </tr>
           <tr>
             <th>XVII.</th>
             <td>November 11, 2019</td>
-            <td>Masquerade (Purgatory), Atlanta, GA</td>
+            <td>Masquerade (Purgatory)</td>
+            <td>Atlanta, GA</td>
           </tr>
           <tr>
             <th>XVIII.</th>
             <td>November 15, 2019</td>
-            <td>Gramercy Theatre, New York, NY</td>
+            <td>Gramercy Theatre</td>
+            <td>New York, NY</td>
           </tr>
             <tr>
             <td class=tablehead colspan="7"></td>
@@ -196,10 +239,10 @@
             <th>Tour Name</th>
             <th>No.</th>
             <th>Date</th>
+            <th>Venue</td>
             <th>Location</th>
             <th>Performing Artists</th>
             <th>Admission Fee</th>
-            <th>Tickets Sold</th>
           </tr>
             
             
@@ -207,33 +250,37 @@
             <th id=cave class="sectionhead" rowspan="6">Cavetown Tour</th>
             <th>I.</th>
             <td>December 2, 2019</td>
-            <td>Birgmingham 02 Academy</td>
+            <td>02 Academy</td>
+            <td>Birgmingham, UK</td>
             <td>Cavetown, mxmtoon</td>
             <td rowspan="6">€22.00 + fees</td>
-            <td rowspan="6">No Info Available</td>
           </tr>
           <tr>
             <th>II.</th>
             <td>December 3, 2019</td>
-            <td>Norwich Epic</td>
+            <td>Epic</td>
+            <td>Norwich, UK</td>
             <td>Cavetown, mxmtoon, spookyghostboy</td>
           </tr>
           <tr>
             <th>III.</th>
             <td>December 5, 2019</td>
-            <td>Leeds Bruidnell Social Club</td>
+            <td>Bruidnell Social Club</td>
+            <td>Leeds, UK</td>
             <td>Cavetown, Holodrum, Simi, mxmtoon, Napeneck, Game_Program</td>
           </tr>
           <tr>
             <th>IV.</th>
             <td>December 6, 2019</td>
-            <td>Glasgow The Garage</td>
+            <td>The Garage</td>
+            <td>Glasgow, UK</td>
             <td>Cavetown, mxmtoon</td>
           </tr>
           <tr>
             <th>V.</th>
             <td>December 7, 2019</td>
-            <td>Manchester Academy 2</td>
+            <td>Academy 2</td>
+            <td>Manchester, UK</td>
             <td rowspan="2">Cavetown, mxmtoon, spookyghostboy</td>
           </tr>
           <tr>
@@ -242,258 +289,420 @@
             <td>Bristol The Fleece</td>
           </tr>
           <tr><td colspan="7" class=tablehead></td></tr>
+            <tr class=sectionhead><th id=rising colspan="7">rising (the world tour</th></tr>
           <tr>
-            <th class=sectionhead rowspan="44" id=rising>rising (the world tour)</th>
+            <th id=rising2 class=sectionhead rowspan="44" >rising (the world tour)</th>
             <th>I.</th>
             <td>May 2, 2022</td>
-            <td>Fairmount Theatre, Montreal, QC</td>
+            <td>Fairmount Theatre</td>
+            <td>Montreal, QC</td>
             <td rowspan="29">mxmtoon, chloe moriondo</td>
-            <td>$27-$34</td>
-            <td rowpsan="44">Sold Out</td>
+            <td rowspan="34">$27-$75</td>
           </tr>
           <tr>
             <th>II.</th>
             <td>May 4, 2022</td>
-            <td>Danforth Music Hall, Toronto, ON</td>
-            <td></td>
+            <td>Danforth Music Hall</td>
+            <td>Toronto, ON</td>
           </tr>
           <tr>
             <th>III.</th>
             <td>May 5, 2022</td>
-            <td>Magestic Theatre, Detroit, MI</td>
-            <td></td>
+            <td>Magestic Theatre</td>
+            <td>Detroit, MI</td>
           </tr>
           <tr>
             <th>IV.</th>
             <td>May 7, 2022</td>
-            <td>House of Blues, Chicago, IL</td>
-            <td></td>
+            <td>House of Blues</td>
+            <td>Chicago, IL</td>
           </tr>
           <tr>
             <th>V.</th>
             <td>May 8, 2022</td>
-            <td>Varsity Theatre, Minneapolis, MN</td>
-            <td></td>
+            <td>Varsity Theatre</td>
+            <td>Minneapolis, MN</td>
           </tr>
           <tr>
             <th>VI.</th>
             <td>May 10, 2022</td>
-            <td>The Gothic, Englewood, CO</td>
-            <td></td>
+            <td>The Gothic</td>
+            <td>Englewood, CO</td>
           </tr>
           <tr>
             <th>VII.</th>
             <td>May 11, 2022</td>
-            <td>The Complex, Salt Lake City, UT</td>
-            <td></td>
+            <td>The Complex</td>
+            <td>Salt Lake City, UT</td>
           </tr>
           <tr>
             <th>VIII.</th>
             <td>May 13, 2022</td>
-            <td>Vogue Theatre, Vancouver, BC</td>
-            <td></td>
+            <td>Vogue Theatre</td>
+            <td>Vancouver, BC</td>
           </tr>
           <tr>
             <th>IX.</th>
             <td>May 14, 2022</td>
-            <td>Wonder Ballroom, Portland, OR</td>
-            <td></td>
+            <td>Wonder Ballroom</td>
+            <td>Portland, OR</td>
           </tr>
           <tr>
             <th>X.</th>
             <td>May 15, 2022</td>
-            <td>Showbox Market, Seattle, WA</td>
-            <td></td>
+            <td>Showbox Market</td>
+            <td>Seattle, WA</td>
           </tr>
           <tr>
             <th>XI.</th>
             <td>May 17, 2022</td>
-            <td rowspan="2">Regency Ballroom, San Francisco, CA</td>
-            <td></td>
+            <td rowspan="2">Regency Ballroom</td>
+            <td rowspan="2">San Francisco, CA</td>
           </tr>
           <tr>
             <th>XII.</th>
             <td>May 18, 2022</td>
-            <td></td>
           </tr>
           <tr>
             <th>XIII.</th>
             <td>May 20, 2022</td>
-            <td>Observatory, Santa Ana, CA</td>
-            <td></td>
+            <td>Observatory</td>
+            <td>Santa Ana, CA</td>
           </tr>
           <tr>
             <th>XIV.</th>
             <td>May 21, 2022</td>
-            <td rowspan="2">Fonda Theatre, Los Angeles, CA</td>
-            <td></td>
+            <td rowspan="2">Fonda Theatre</td>
+            <td rowspan="2">Los Angeles, CA</td>
           </tr>
           <tr>
             <th>XV.</th>
             <td>May 22, 2022</td>
-            <td></td>
-          </tr>
-          <tr>
-            <th>X.</th>
-            <td>May 24, 2022</td>
-            <td>House of Blues, San Diego, CA</td>
-            <td></td>
           </tr>
           <tr>
             <th>XVI.</th>
-            <td>May 25, 2022</td>
-            <td>The Van Buren, Phoenix, AZ</td>
-            <td></td>
+            <td>May 24, 2022</td>
+            <td>House of Blues</td>
+            <td>San Diego, CA</td>
           </tr>
           <tr>
             <th>XVII.</th>
-            <td>May 27, 2022</td>
-            <td>The Studio at the Factory, Dallas, TX</td>
-            <td></td>
+            <td>May 25, 2022</td>
+            <td>The Van Buren</td>
+            <td>Phoenix, AZ</td>
           </tr>
           <tr>
             <th>XVIII.</th>
-            <td>May 28, 2022</td>
-            <td>Scoot Inn, Austin, TX</td>
-            <td></td>
+            <td>May 27, 2022</td>
+            <td>The Studio at the Factory</td>
+            <td>Dallas, TX</td>
           </tr>
           <tr>
-            <th>XIX.</th>
-            <td>May 29, 2022</td>
-            <td>White Oak Downstairs, Houston, TX</td>
-            <td></td>
+            <th>XIX</th>
+            <td>May 28, 2022</td>
+            <td>Scoot Inn</td>
+            <td>Austin, TX</td>
           </tr>
           <tr>
             <th>XX.</th>
-            <td>May 31, 2022</td>
-            <td>The Beacham, Orlando, FL</td>
-            <td></td>
+            <td>May 29, 2022</td>
+            <td>White Oak Downstairs</td>
+            <td>Houston, TX</td>
           </tr>
           <tr>
             <th>XXI.</th>
-            <td>June 1, 2022</td>
-            <td>Variety Playhouse, Atlanta, GA</td>
-            <td></td>
+            <td>May 31, 2022</td>
+            <td>The Beacham</td>
+            <td>Orlando, FL</td>
           </tr>
           <tr>
             <th>XXII.</th>
-            <td>June 3, 2022</td>
-            <td>9:30 Club, Washington, DC</td>
-            <td></td>
+            <td>June 1, 2022</td>
+            <td>Variety Playhouse</td>
+            <td>Atlanta, GA</td>
           </tr>
           <tr>
             <th>XXIII.</th>
-            <td>June 4, 2022</td>
-            <td>Roxain Theatre, Pittsburgh, PA</td>
-            <td></td>
+            <td>June 3, 2022</td>
+            <td>9:30 Club</td>
+            <td>Washington, DC</td>
           </tr>
           <tr>
             <th>XXIV.</th>
-            <td>June 5, 2022</td>
-            <td>TLA, Philadelphia, PA</td>
-            <td></td>
+            <td>June 4, 2022</td>
+            <td>Roxain Theatre</td>
+            <td>Pittsburgh, PA</td>
           </tr>
           <tr>
             <th>XXV.</th>
-            <td>June 7, 2022</td>
-            <td rowspan="2">Webster Hall, New York, NY</td>
-            <td></td>
+            <td>June 5, 2022</td>
+            <td>TLA</td>
+            <td>Philadelphia, PA</td>
           </tr>
           <tr>
             <th>XXVI.</th>
-            <td>June 8, 2022</td>
-            <td></td>
+            <td>June 7, 2022</td>
+            <td rowspan="2">Webster Hall</td>
+            <td rowspan="2">New York, NY</td>
           </tr>
           <tr>
             <th>XXVII.</th>
-            <td>June 10, 2022</td>
-            <td rowspan="2">Royale, Boston, MA</td>
-            <td></td>
+            <td>June 8, 2022</td>
           </tr>
           <tr>
             <th>XXVIII.</th>
-            <td>June 11, 2022</td>
-            <td></td>
+            <td>June 10, 2022</td>
+            <td rowspan="2">Royale</td>
+            <td rowspan="2">Boston, MA</td>
           </tr>
           <tr>
             <th>XXIX.</th>
+            <td>June 11, 2022</td>
+          </tr>
+          <tr>
+            <th>XXX.</th>
             <td>October 4, 2022</td>
-            <td>Recital Centre, Melbourne, Australia</td>
+            <td>Recital Centre</td>
+            <td>Melbourne, Australia</td>
             <td rowspan="4">mxmtoon</td>
           </tr>
           <tr>
-            <th>XXX</th>
+            <th>XXXI</th>
             <td>October 6, 2022</td>
-            <td>Metro Theatre, Sydney, Australia</td>
+            <td>Metro Theatre</td>
+            <td>Sydney, Australia</td>
             
           </tr>
           <tr>
-            <th>XXXI</th>
-            <td>October 9, 2022</td>
-            <td>The Triffid, Brisbane, Australia</td>
-          </tr>
-          <tr>
             <th>XXXII</th>
-            <td>October 11, 2022</td>
-            <td>Tuning Fork, Auckland, New Zealand</td>
+            <td>October 9, 2022</td>
+            <td>The Triffid</td>
+            <td>Brisbane, Australia</td>
           </tr>
           <tr>
             <th>XXXIII</th>
-            <td>October 16, 2022</td>
-            <td>La Maroquinerie, Paris, France</td>
-            <td rowspan="11">mxmtoon, Ricky Montgomery</td>
+            <td>October 11, 2022</td>
+            <td>Tuning Fork</td>
+            <td>Auckland, New Zealand</td>
           </tr>
           <tr>
             <th>XXXIV</th>
-            <td>October 17, 2022</td>
-            <td>Het Depot, Leuven, Belgium</td>
+            <td>October 16, 2022</td>
+            <td>La Maroquinerie</td>
+            <td>Paris, France</td>
+            <td>mxmtoon, Ricky Montgomery</td>
           </tr>
-          <tr>
+          
+          
+          <tr class=cancelled>
             <th>XXXV</th>
+            <td>October 17, 2022</td>
+            <td>Het Depot</td>
+            <td>Leuven, Belgium</td>
+            <td colspan="2" rowspan="7">CANCELLED</td>
+          </tr>
+          <tr class="cancelled">
+            <th>XXXVI</th>
             <td>October 18, 2022</td>
-            <td>Bürgerhaus Stollwerck, Köln, Germany</td>
+            <td>Bürgerhaus Stollwerck</td>
+            <td>Köln, Germany</td>
           </tr>
-          <tr>
-            <th>XXXVI</th>
-            <td>October 20, 2022</td>
-            <td>Freiheirshalle, Munich, Germany</td>
-          </tr>
-          <tr>
-            <th>XXXVI</th>
-            <td>October 20, 2022</td>
-            <td>Kesselhaus, Berlin, Germany</td>
-          </tr>
-          <tr>
+          <tr class="cancelled">
             <th>XXXVII</th>
+            <td>October 20, 2022</td>
+            <td>Freiheirshalle</td>
+            <td>Munich, Germany</td>
+          </tr>
+          <tr class="cancelled">
+            <th>XXXVI</th>
+            <td>October 20, 2022</td>
+            <td>Kesselhaus</td>
+            <td>Berlin, Germany</td>
+          </tr>
+          <tr class="cancelled">
+            <th >XXXVIII</th>
             <td>October 22, 2022</td>
-            <td>Praga Centrum, Warsaw, Poland</td>
+            <td>Praga Centrum</td>
+            <td>Warsaw, Poland</td>
           </tr>
-          <tr>
-            <th>XXXVIII</th>
-            <td>October 24, 2022</td>
-            <td>Mojo Club, Hamburg, Germany</td>
-          </tr>
-          <tr>
+          <tr class="cancelled">
             <th>XXXIX</th>
-            <td>October 25, 2022</td>
-            <td>Tolhuistuin, Amsterdam, The Netherlands</td>
+            <td>October 24, 2022</td>
+            <td>Mojo Club</td>
+            <td>Hamburg, Germany</td>
           </tr>
-          <tr>
+          <tr class="cancelled">
             <th>XXXX</th>
-            <td>October 27, 2022</td>
-            <td>Electric Brixton, London, U.K.</td>
+            <td>October 25, 2022</td>
+            <td>Tolhuistuin</td>
+            <td>Amsterdam, The Netherlands</td>
           </tr>
+          
           <tr>
+            <th><s title="The number of this show was changed upon the cancellation of prior shows."style="color:#383737">XXXXI</s> XXXV</th>
+            <td>October <s title="The date of this show was changed upon the cancellation of prior shows.">27</s> 17, 2022</td>
+            <td>Electric Brixton</td>
+            <td>London, U.K.</td>
+            <td>mxmtoon, Ricky Montgomery</td>
+            <td>$27-$75</td>
+          </tr>
+          
+          <tr class="cancelled">
             <th>XXXXII</th>
             <td>October 28, 2022</td>
-            <td>Manchester Academy, Manchester, U.K.</td>
+            <td>Manchester Academy</td>
+            <td>Manchester, U.K.</td>
+            <td rowspan="2" colspan="2">CANCELLED</td>
           </tr>
-          <tr>
+          <tr class="cancelled">
             <th>XXXXIII</th>
             <td>October 29, 2022</td>
-            <td>The Academy, Dublin, Ireland</td>
+            <td>The Academy</td>
+            <td>Dublin, Ireland</td>
           </tr>
-          <tr><td colspan="7" class=tablehead></td></tr>
+         
+          <tr class=sectionhead>
+            <th>Tour Name</th>
+            <th>No.</th>
+            <th>Date</th>
+            <th>Location</th>
+            <th>Venue</th>
+            <th>Performing Artists</th>
+            <th>Admission Fee</th>
+          </tr>
+          
+          <tr>
+            <th id=bitter class=sectionhead rowspan="12">Bittersweet Daze</th>
+            <th>I.</th>
+            <td>20 July 2023</td>
+            <td>Greek Theatre</td>
+            <td>Los Angeles, CA</td>
+            
+            <td rowspan="12">mxmtoon, Cavetown, Ricky Montgomery, grentperez</td>
+            <td rowspan="12" title="Reported ticket prices vary">$46-$51*</td>
+            </tr>
+            <tr>
+            <th>II.</th>
+            <td>21 July 2023</td>
+            <td>Cal Coast Credit Union Open</td>
+            <td>San Diego, CA</td>
+            
+            </tr>
+            <tr>
+            <th>III.</th>
+            <td>23 July 2023</td>
+            <td>Frost Amphitheater</td>
+            <td>Stanford, CA</td>
+            
+            </tr>
+            <tr>
+            <th>IV.</th>
+            <td>25 July 2023</td>
+            <td>Saltair</td>
+            <td>Magna, UT</td>
+            
+            </tr>
+            <tr>
+            <th>V.</th>
+            <td>26 July 2023</td>
+            <td>Levitt Pavilion</td>
+            <td>Denver, CO</td>
+            
+            </tr>
+            <tr>
+            <th>VI.</th>
+            <td>28 July 2023</td>
+            <td>St. Louis Music Park</td>
+            <td>Maryland Heights, MD</td>
+            
+            </tr>
+            <tr>
+            <th>VII.</th>
+            <td>29 July 2023</td>
+            <td>The Salt Shed</td>
+            <td>Chicago, IL</td>
+            </tr>
+            <tr>
+            <th>VIII.</th>
+            <td>30 July 2023</td>
+            <td>Rock The Ruins</td>
+            <td>Indianapolis, IN</td>
+            
+            </tr>
+            <tr>
+            <th>IX.</th>
+            <td>1 August 2023</td>
+            <td>Jacobs Pavilion</td>
+            <td>Cleveland, OH</td>
+            
+            </tr>
+            <tr>
+            <th>X.</th>
+            <td>3 August 2023</td>
+            <td>SummerStage</td>
+            <td>New York, NY</td>
+            
+            </tr>
+            <tr>
+            <th>XI.</th>
+            <td>4 August 2023</td>
+            <td>Skyline Stage at the Mann</td>
+            <td>Philadelphia, PA</td>
+            
+            </tr>
+            <tr>
+            <th title="I attended this concert!">XII.</th>
+            <td>5 August 2023</td>
+            <td>The Palladium Outdoors</td>
+            <td>Boston, MA</td>
+            
+            </tr>
+           <tr><td colspan="7" class=tablehead></td></tr>
+          <tr>
+            <th id=plumr class=sectionhead rowspan="7">plum blossom (revisited) tour</th>
+            <th>I.</th>
+            <td>November 27 2023</td>
+            <td>Omeara</td>
+            <td>London, UK</td>
+            <td rowspan="7">mxmtoon</td>
+            <td rowspan="7">$30-$35</td>
+          </tr>
+          <tr>
+            <th>II.</th>
+            <td>December 6, 2023</td>
+            <td>Barboza</td>
+            <td>Seattle, WA</td>
+          </tr>
+          <tr>
+            <th>III.</th>
+            <td>December 8, 2023</td>
+            <td>Cafe du Nord</td>
+            <td>San Francisco, CA</td>
+          </tr>
+          <tr>
+            <th>IV.</th>
+            <td>December 9, 2023</td>
+            <td>The Echo</td>
+            <td>Los Angeles, CA</td>
+          </tr>
+          <tr>
+            <th>V.</th>
+            <td>December 12, 2023</td>
+            <td>Space</td>
+            <td>Evanston, IL</td>
+          </tr>
+          <tr>
+            <th>VI.</th>
+            <th>December 14, 2023</th>
+            <td>The Red Room @ Cafe 939</td>
+            <td>Boston, MA</td>
+          </tr>
+          <tr>
+            <th>VII.</th>
+            <td>December 15</td>
+            <td>Roulette</td>
+            <td>Brooklyn, NY</td>
+          </tr>
         </table>
       </div>
     </main>

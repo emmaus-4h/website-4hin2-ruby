@@ -14,6 +14,12 @@
 /* Basisinstellingen voor alle pagina's, alleen aanpassen als je pro wilt worden */
 * {box-sizing:border-box}
 
+tr.cancelled, td.cancelled, th.cancelled {
+  background-color: #d6333e;
+  color:#383737;
+}
+
+
 /* Slideshow container */
 .slideshow-container {
   max-width: 500px;
@@ -133,6 +139,8 @@ div {                             /* geldt voor div */
 /* Add this line to specify bold font weight */
 }
 
+
+
 div.albumlist {
   border-radius: 10px;
   background-color:#efdff4;
@@ -175,13 +183,46 @@ div.present {
   width:5%;
 }
 
+img.intext {
+  width:300px;
+  border: 6px solid #1b1725;
+  border-radius: 10px;
+  margin-right: 10px;
+  margin-left: 5px;
+}
+
+#finder {
+  border-top: none;
+}
+
+#finder, #hider {
+  display: block;
+  width: 110px;
+  top:50%;
+  height: 50px;
+  margin-top:0px;
+  margin-bottom:0px;
+  border-collapse: unset;
+  background-color: #efdff4;
+  border: 2px solid #1b1725;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+#finder:hover, #hider:hover {
+  background-color: #918a93;
+  color: #efdff4;
+  cursor:pointer;
+}
+
+
+
 .present table, .present tr, .present td {
   background-color:#efdff4;
   padding:15px;
   color:#1b1725;
   border-radius: 5px;
   right: 2.5%;
-  top:50%;
+  top:60%;
   border: 2px solid #1b1725;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   border-collapse:collapse;
@@ -190,6 +231,8 @@ div.present {
   width:2.5%;
   height:50px;
 }
+
+
 
 .present td:hover {
   background-color:#aea5b1;
@@ -211,10 +254,9 @@ table {
   height:300px;
 }
 
-
-
 .present {
   position:fixed;
+  z-index: 1;
 }
 
 .peekaboo {
@@ -258,6 +300,12 @@ p {
   margin: 10px 0px;
   text-align: center;
   color: #efdff4;
+  background-color: #715e87;
+  border-radius: 5px;
+  z-index: 2;
+  width:80%;
+  margin-left:15%;
+  margin-right:5%;
 }
 
 p a {
